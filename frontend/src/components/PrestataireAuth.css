@@ -1,0 +1,332 @@
+/* PrestataireAuth.css - Style pour les composants Prestataire */
+
+/* Utilisation des mêmes variables que dans Auth.css */
+:root {
+    --primary-color: #d4af37;
+    --primary-hover: #c9a52d;
+    --secondary-color: #333333;
+    --text-color: #333333;
+    --text-light: #666666;
+    --border-color: #ddd;
+    --background-light: #f8f9fa;
+    --error-color: #e63946;
+    --success-color: #2a9d8f;
+    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s ease;
+  }
+  
+  /* Style pour les conteneurs principaux */
+  .login-container,
+  .register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: white;
+  }
+  
+  /* Titres */
+  .login-container h2,
+  .register-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Formulaires */
+  .login-container form,
+  .register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Groupes de champs */
+  .login-container form > div,
+  .register-container form > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Labels */
+  .login-container label,
+  .register-container label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Inputs */
+  .login-container input,
+  .register-container input,
+  .register-container textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  /* Focus sur les inputs */
+  .login-container input:focus,
+  .register-container input:focus,
+  .register-container textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+  }
+  
+  /* Textarea pour la description */
+  .register-container textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Bouton de soumission */
+  .login-container button,
+  .register-container button {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Hover sur le bouton */
+  .login-container button:hover,
+  .register-container button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Pour le responsive */
+  @media (max-width: 768px) {
+    .login-container,
+    .register-container {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+    
+    .login-container h2,
+    .register-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Pour les écrans encore plus petits */
+  @media (max-width: 480px) {
+    .login-container,
+    .register-container {
+      padding: 1rem;
+    }
+    
+    .login-container input,
+    .register-container input,
+    .register-container textarea {
+      padding: 0.6rem 0.8rem;
+    }
+    
+    .login-container button,
+    .register-container button {
+      padding: 0.8rem;
+    }
+  }
+  
+  /* Conteneur page complète pour ajouter la partie décorative */
+  .prestataire-auth-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+  }
+  
+  /* Partie formulaire */
+  .prestataire-auth-content {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    overflow-y: auto;
+    max-height: 100vh; /* Assurer une hauteur maximale */
+  }
+  
+  /* Partie décorative */
+  .prestataire-auth-decoration {
+    flex: 0.6;
+    background: linear-gradient(145deg, #d4af37, #8b7513, #333333);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Éléments décoratifs animés */
+  .prestataire-auth-decoration::before {
+    content: "";
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: float 15s infinite ease-in-out;
+  }
+  
+  .prestataire-auth-decoration::after {
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    left: -15%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    animation: float 20s infinite ease-in-out reverse;
+  }
+  
+  /* Contenu de la partie décorative */
+  .prestataire-decoration-content {
+    max-width: 80%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+  }
+  
+  .prestataire-decoration-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .prestataire-decoration-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prestataire-tagline {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 20px 0;
+    letter-spacing: 1px;
+  }
+  
+  /* Animation pour les éléments décoratifs */
+  @keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-20px) translateX(15px); }
+  }
+  
+  /* Responsive pour la page complète */
+  @media (max-width: 992px) {
+    .prestataire-auth-page {
+      flex-direction: column;
+      height: auto; /* Permettre à la page de s'étendre */
+    min-height: 100vh;
+    }
+    
+    .prestataire-auth-content {
+      flex: none;
+      /*height: 70vh;*/
+      min-height: 70vh; /* Utiliser min-height au lieu de height */
+    max-height: none; /* Permettre l'extension */
+    }
+    
+    .prestataire-auth-decoration {
+      flex: none;
+      height: 30vh;
+    }
+  }
+  
+  /* Logo et en-tête */
+  .prestataire-auth-logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .prestataire-auth-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+  }
+  
+  .logo-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .prestataire-auth-app-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+  }
+  
+  /* Message d'accueil */
+  .prestataire-auth-welcome {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .prestataire-auth-welcome h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prestataire-auth-welcome p {
+    font-size: 1rem;
+    color: var(--text-light);
+  }
+  
+  /* Liens alternatifs (inscription/connexion) */
+  .prestataire-auth-alternative {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .prestataire-auth-switch-link {
+    margin-left: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .prestataire-auth-switch-link:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+  }

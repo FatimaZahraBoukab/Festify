@@ -1,0 +1,193 @@
+.footer {
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.footer-logo span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer-description {
+  color: #a0a8b8;
+  line-height: 1.6;
+}
+
+.footer h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.footer-contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: #a0a8b8;
+}
+
+.footer-contact i {
+  color:white;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #b8a369;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+
+
+
+.footer-bottom p {
+  color: #a0a8b8;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 6rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-contact ul li {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+}
+
+
+  /* Footer.css - Ajoutez ces styles à la fin du fichier */
+
+.footer-become-provider {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 20px;
+}
+
+.footer-become-provider h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-become-provider p {
+  color: #b3b3b3;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.become-provider-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #caa427;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.become-provider-btn:hover {
+  color: #caa427;
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-become-provider {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+  

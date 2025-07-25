@@ -1,0 +1,157 @@
+/* ServicesPage.css */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap");
+
+.services-container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.services-header1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-subtitle1 {
+  color: #b8a369;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.services-title1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: "Playfair Display", serif;
+}
+
+.highlight1 {
+  color: #b8a369;
+}
+
+.services-description1 {
+  font-size: 18px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.services-cards1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card1 {
+  flex: 0 0 calc(33.333% - 20px);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.service-card1:hover {
+  transform: translateY(-10px);
+}
+
+.service-image-container1 {
+  height: 400px;
+  overflow: hidden;
+}
+
+.service-image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card1:hover .service-image1 {
+  transform: scale(1.05);
+}
+
+.service-label1 {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.service-label1 h3 {
+  color: #b8a369;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.scroll-top-button1 {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+
+.scroll-top-button1:hover {
+  background-color: #b8a369;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .service-card1 {
+    flex: 0 0 calc(50% - 15px);
+  }
+
+  .services-cards1 {
+    flex-direction: column;
+  }
+
+  .service-card1 {
+    margin-bottom: 30px;
+  }
+
+  .services-title1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card1 {
+    flex: 0 0 100%;
+  }
+
+  .services-title1 {
+    font-size: 28px;
+  }
+
+  .services-subtitle1 {
+    font-size: 16px;
+  }
+
+  .services-description1 {
+    font-size: 16px;
+  }
+}
+

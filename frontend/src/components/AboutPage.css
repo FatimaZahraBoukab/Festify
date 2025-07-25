@@ -1,0 +1,55 @@
+.a-propos {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+  }
+
+  .a-propos-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+  }
+  
+  .a-propos-image {
+    width: 600px;
+    height: 600px; /* Format carré */
+    object-fit: cover; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .a-propos-image:hover {
+    transform: scale(1.03);
+  }
+  
+  .a-propos-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .a-propos-text h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  
+  .a-propos-text h3 {
+    font-size: 30px;
+    color: #b8a369;
+    margin-bottom: 25px;
+    font-weight: 500px;
+    font-style: italic;
+  }
+  
+  .a-propos-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+  
+  

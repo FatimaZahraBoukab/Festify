@@ -1,0 +1,246 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Admin-login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.Admin-welcome-123 {
+  margin-bottom: min(1.5vh, 1rem);
+  flex-shrink: 0;
+}
+
+.Admin-welcome-123 h2 {
+  font-size: min(6vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: min(1vh, 0.5rem);
+  letter-spacing: 1px; /* More elegant spacing like Festify */
+  text-transform: uppercase; /* Matching Festify's style */
+}
+
+
+/* Left side - Login form */
+.Admin-login-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  background-color: white;
+}
+
+.Admin-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.Admin-logo {
+  height: 50px;
+  width: auto;
+}
+
+.Admin-logo-text {
+  font-size: min(5vw, 1.8rem);
+  font-weight: 700;
+  color: var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.5px; /* Similar to Festify */
+}
+
+.Admin-login-form-container {
+  flex : 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
+}
+
+.Admin-welcome-text {
+  font-size: 80px;
+  font-weight: 900px;
+  color: #1e293b;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.error-alert {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.Admin-login-form {
+  width: 100%;
+}
+
+.Admin-form-group {
+  margin-bottom: 20px;
+}
+
+.Admin-form-group label {
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.Admin-password-header ,.Admin-username-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.Admin-forgot-password {
+  font-size: 14px;
+  color: #c8a732;
+  text-decoration: none;
+}
+
+.Admin-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.Admin-input-container input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.Admin-input-container input:focus {
+  outline: none;
+}
+
+.Admin-input-container .input-icon {
+  position: absolute;
+  right: 12px;
+  color: #9ca3af;
+}
+
+.Admin-input-container input::placeholder {
+  color: #9ca3af;
+}
+
+.Admin-login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.Admin-login-button:hover {
+  background-color: #333;
+}
+
+.Admin-login-button:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+.Admin-register-link {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.Admin-register-link a {
+  color: #c8a732;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Right side - Gold background with content */
+.Admin-login-right {
+  width: 50%;
+  background-color: #c8a732;
+  position: relative;
+  overflow: hidden;
+}
+
+.Admin-login-right::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.Admin-login-right::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  right: 100px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.Admin-right-content {
+  position: relative;
+  z-index: 1;
+  padding: 60px;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Admin-headline {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.Admin-subheadline {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.Admin-description {
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.Admin-tagline {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
